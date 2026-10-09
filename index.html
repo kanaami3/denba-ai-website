@@ -389,6 +389,14 @@ a{color:inherit;text-decoration:none}
 .cdp-msg{margin-top:34px;text-align:center;font-weight:800;color:var(--navy);font-size:16px}
 .cdp-msg u{color:var(--red);text-underline-offset:5px}
 @media(max-width:900px){.cdp{grid-template-columns:1fr}.cdp-arr{transform:rotate(90deg);padding:6px 0}}
+.about-why{max-width:760px;margin-top:24px}
+.about-why p{font-size:15px;color:var(--muted);margin-bottom:14px;line-height:1.9}
+.aiteam{margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:auto auto;gap:16px;max-width:720px;position:relative}
+.aiteam-core{grid-column:1/-1;justify-self:center;width:180px;height:180px;border-radius:50%;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(30,39,97,.25)}
+.aiteam-core b{color:var(--amber);font-size:24px;letter-spacing:.08em}
+.aiteam-core span{color:var(--ice);font-size:13px;letter-spacing:.2em;margin-top:4px}
+.aiteam-node{background:#fff;border-top:3px solid var(--volt);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 10px 30px rgba(30,39,97,.07);padding:20px;text-align:center;font-weight:800;letter-spacing:.2em;color:var(--navy)}
+@media (min-width:760px){.aiteam{grid-template-columns:repeat(4,1fr);max-width:none}}
 </style>
 </head>
 <body>
@@ -398,7 +406,7 @@ a{color:inherit;text-decoration:none}
     <a class="brand" href="#top">DENBA <b>AI</b></a><span class="internal-badge">社内レビュー版</span>
     <nav class="gnav" aria-label="ページ内メニュー">
       <a href="#walls">課題</a>
-      <a href="#merge">統合とコスト</a>
+      <a href="#merge">DENBA AIとは</a>
       <a href="#products">プロダクト</a>
       <a href="#digital">デジタル社員</a>
       <a href="#talent">人材</a>
@@ -498,63 +506,38 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
-<!-- ============ 統合とコスト ============ -->
+<!-- ============ DENBA AIとは ============ -->
 <section class="sec alt" id="merge">
   <div class="sec-in">
-    <p class="kanji reveal">統合</p>
-    <h2 class="reveal">バラバラなSaaSを、ひとつに。<br>その中でAIが働く</h2>
-    <p class="sub reveal">グループウェア・CRM/SFA・経費精算・ECなど、業務ごとに契約していたSaaS機能をDENBA AIが統合します。</p>
-    <div class="merge">
-      <div class="before reveal">
-        <h3>これまで:業務ごとに個別契約</h3>
-        <div class="chipset">
-          <span>グループウェア</span><span>CRM / SFA</span><span>経費精算・会計</span>
-          <span>人事労務・勤怠</span><span>EC・受発注</span><span>BI・データ分析</span>
-        </div>
-        <ul>
-          <li>ツールごとに月額費用が積み上がる</li>
-          <li>データが分断され、二重入力が発生</li>
-          <li>システム間連携に高額な開発費</li>
-        </ul>
-      </div>
-      <div class="merge-arrow" aria-hidden="true">→</div>
-      <div class="after reveal">
-        <h3>これから:DENBA AI ひとつ</h3>
-        <p>すべての業務機能をひとつのプラットフォームに統合。しかも、その中で<b>AIエージェントが「働き」ます</b> ― 照会に答え、業務を実行し、部門をまたいで自動化。</p>
-        <div class="chips2"><span>データ一元化</span><span>連携開発ゼロ</span><span>契約もひとつ</span></div>
-      </div>
-    </div>
-    <div class="modelcase">
-      <p class="mc-title reveal"><span>モデルケース</span>社員50名の会社なら</p>
-      <div class="mc-grid">
-        <div class="pricetbl reveal">
-          <h4>これまで:業務ごとに個別契約した場合(月額の目安)</h4>
-          <div class="row"><b>グループウェア</b><span>約 25,000円</span></div>
-          <div class="row"><b>名刺管理・SFA</b><span>約 75,000〜125,000円</span></div>
-          <div class="row"><b>経費精算・会計</b><span>約 30,000〜50,000円</span></div>
-          <div class="row"><b>勤怠・人事労務</b><span>約 20,000〜40,000円</span></div>
-          <div class="row"><b>EC構築・販売</b><span>約 30,000〜100,000円</span></div>
-          <div class="row"><b>BI・データ分析</b><span>約 30,000〜75,000円</span></div>
-          <div class="total"><b>合計</b><span>月額 約21万〜42万円</span></div>
-          <p class="plus">+ 各ツールの初期費用 ・ システム間の連携開発費 ・ 複数契約の管理工数</p>
-        </div>
-        <div class="mc-vs" aria-hidden="true">VS</div>
-        <div class="mc-denba reveal">
-          <h4>DENBA AI なら</h4>
-          <p class="one">上記の機能を全部込みで、<br><u>ひとつの月額定額</u>。</p>
-          <p>グループウェアも、名刺・顧客管理も、経費精算も、ECも、分析も ― バラバラの契約が1本に。しかも中でAIが働きます。</p>
-          <div class="half">既存構成比 <b>半額以下</b> の総定額(自社試算)</div>
-        </div>
-      </div>
-      <p class="note">※金額は2026年時点の一般的な市場相場に基づく自社調べの目安であり、実際の各サービスの料金・プラン構成により異なります。</p>
-    </div>
-    <div class="halfcost reveal">既存システムからの移行で、コストを<strong>半額以下</strong>へ</div>
-    <p class="note">※複数SaaSを個別契約した場合との自社試算比較。記載の製品カテゴリは一般例です。</p>
+    <p class="kanji reveal">ABOUT</p>
+    <h2 class="reveal">経営と現場を、<br>ひとつの知性でつなぐ。</h2>
+    <p class="sub reveal">DENBA AIは、日本企業の業務フローに合わせて設計する企業向けAI基盤です。会社に蓄積する情報を、実行につながる知性へ変えていきます。</p>
 
+    <p class="kanji reveal" style="margin-top:72px">WHY DENBA AI</p>
+    <h2 class="reveal">AIを足すのではなく、<br>仕事の流れを変える。</h2>
+    <div class="about-why reveal">
+      <p>企業の課題は、情報が足りないことだけではありません。情報が部門ごとに分かれ、必要な人へ必要なタイミングで届かないことにあります。</p>
+      <p>DENBA AIは、既存の仕組みを一度に置き換えるのではなく、重要な業務から段階的に接続します。AIと人がそれぞれ得意な役割を担い、会社全体の判断と実行を速めます。</p>
+    </div>
+
+    <p class="kanji reveal" style="margin-top:72px">THREE ACTIONS</p>
+    <h2 class="reveal">理解し、つなぎ、動かす。</h2>
+    <p class="sub reveal">一つの対話から、部門横断の仕事を組み立てる。DENBA AIが企業の中で担う三つの基本動作です。</p>
     <div class="feats">
-      <div class="feat reveal"><h3><span>即時導入</span> ― 登録後すぐ使える</h3><p>複雑な導入作業・トレーニング・二次開発・専任IT担当は不要。デジタル化の敷居を極限まで下げます。</p></div>
-      <div class="feat reveal"><h3><span>モジュール型</span> ― 必要な分だけ</h3><p>ニーズに応じて機能を選択しワンクリックで開通。最新機能へのアップグレードも継続提供します。</p></div>
-      <div class="feat reveal"><h3>自社開発AIエンジンを原生搭載</h3><p>企業級大規模モデルとエージェント中枢を内蔵。データを深く分析し、経営の意思決定を支援します。</p></div>
+      <div class="feat reveal"><h3><span>01</span> 理解する</h3><p>社内の情報と業務の背景を横断し、経営者や担当者が本当に知りたいことを整理します。</p></div>
+      <div class="feat reveal"><h3><span>02</span> つなげる</h3><p>人事、営業、財務、業務管理の流れを接続し、部門を越えて同じ情報を共有できる状態をつくります。</p></div>
+      <div class="feat reveal"><h3><span>03</span> 動かす</h3><p>判断材料を提示するだけでなく、次のタスク、担当、期限まで具体化して実行へつなげます。</p></div>
+    </div>
+
+    <p class="kanji reveal" style="margin-top:72px">ONE AI TEAM</p>
+    <h2 class="reveal">一人のアシスタントではなく、<br>会社のAIチーム。</h2>
+    <p class="sub reveal">経営AIを中枢に、専門領域を持つAIが連携。依頼内容を理解し、必要な仕事へ分解して、担当するAIへつなぎます。</p>
+    <div class="aiteam reveal">
+      <div class="aiteam-core"><b>DENBA</b><span>AI CORE</span></div>
+      <div class="aiteam-node">SALES</div>
+      <div class="aiteam-node">PEOPLE</div>
+      <div class="aiteam-node">FINANCE</div>
+      <div class="aiteam-node">OPERATIONS</div>
     </div>
   </div>
 </section>
